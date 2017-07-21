@@ -1,0 +1,13 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="Assignment2Proxy"
+	transports="https,http" statistics="disable" trace="disable"
+	startOnLoad="true">
+	<target >
+		<outSequence>
+			<send />
+		</outSequence>
+		<endpoint
+		name="endpoint_urn_uuid_6cb4ee2a-4a82-4d9d-8563-b176542a2596">
+		<address uri="http://10.100.5.39:9763/services/SimpleStockQuoteService/ " />
+		</endpoint>
+	</target>
+</proxy>
